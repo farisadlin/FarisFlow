@@ -8,6 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 COPY packages/fossflow-lib/package*.json ./packages/fossflow-lib/
 COPY packages/fossflow-app/package*.json ./packages/fossflow-app/
+COPY packages/fossflow-backend/package*.json ./packages/fossflow-backend/
 
 #Update NPM
 RUN npm install -g npm@11.5.2
