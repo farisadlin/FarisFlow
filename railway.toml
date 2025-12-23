@@ -6,3 +6,7 @@ dockerfilePath = "Dockerfile"
 startCommand = "/docker-entrypoint.sh"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
+
+# Tell Railway which port your app listens on
+healthcheckPath = "/"
+healthcheckTimeout = 100

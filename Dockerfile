@@ -36,5 +36,7 @@ EXPOSE 80 3001
 ENV ENABLE_SERVER_STORAGE=true
 ENV STORAGE_PATH=/data/diagrams
 ENV BACKEND_PORT=3001
+ENV PORT=80
+
 # Start services
 ENTRYPOINT ["/docker-entrypoint.sh"]
